@@ -5,20 +5,20 @@
                     <div id="sidebar-menu">
 
                         <div class="logo-box">
-                            <a href="index.html" class="logo logo-light">
+                            <a href="{{ route('dashboard') }}" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-light.png" alt="" height="24">
+                                    <img src="{{ asset('backend/assets/images/logo-light.png') }}" alt="" height="24">
                                 </span>
                             </a>
-                            <a href="index.html" class="logo logo-dark">
+                            <a href="{{ route('dashboard') }}" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-dark.png" alt="" height="24">
+                                    <img src="{{ asset('backend/assets/images/logo-dark.png') }}" alt="" height="24">
                                 </span>
                             </a>
                         </div>
@@ -36,10 +36,10 @@
                                 <div class="collapse" id="sidebarDashboards">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="index.html" class="tp-link">Analytical</a>
+                                            <a href="{{ route('dashboard') }}" class="tp-link">Analytical</a>
                                         </li>
                                         <li>
-                                            <a href="ecommerce.html" class="tp-link">E-commerce</a>
+                                            <a href="javascript:void(0);" class="tp-link">E-commerce</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -63,25 +63,25 @@
                                 <div class="collapse" id="sidebarAuth">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="auth-login.html" class="tp-link">Log In</a>
+                                            <a href="{{ route('login') }}" class="tp-link">Log In</a>
                                         </li>
                                         <li>
-                                            <a href="auth-register.html" class="tp-link">Register</a>
+                                            <a href="{{ route('register') }}" class="tp-link">Register</a>
                                         </li>
                                         <li>
-                                            <a href="auth-recoverpw.html" class="tp-link">Recover Password</a>
+                                            <a href="{{ route('password.request') }}" class="tp-link">Recover Password</a>
                                         </li>
                                         <li>
-                                            <a href="auth-lock-screen.html" class="tp-link">Lock Screen</a>
+                                            <a href="javascript:void(0);" class="tp-link">Lock Screen</a>
                                         </li>
                                         <li>
-                                            <a href="auth-confirm-mail.html" class="tp-link">Confirm Mail</a>
+                                            <a href="javascript:void(0);" class="tp-link">Confirm Mail</a>
                                         </li>
                                         <li>
-                                            <a href="email-verification.html" class="tp-link">Email Verification</a>
+                                            <a href="javascript:void(0);" class="tp-link">Email Verification</a>
                                         </li>
                                         <li>
-                                            <a href="auth-logout.html" class="tp-link">Logout</a>
+                                            <a href="{{ route('admin.logout') }}" class="tp-link">Logout</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -96,19 +96,19 @@
                                 <div class="collapse" id="sidebarError">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="error-404.html" class="tp-link">Error 404</a>
+                                            <a href="javascript:void(0);" class="tp-link">Error 404</a>
                                         </li>
                                         <li>
-                                            <a href="error-500.html" class="tp-link">Error 500</a>
+                                            <a href="javascript:void(0);" class="tp-link">Error 500</a>
                                         </li>
                                         <li>
-                                            <a href="error-503.html" class="tp-link">Error 503</a>
+                                            <a href="javascript:void(0);" class="tp-link">Error 503</a>
                                         </li>
                                         <li>
-                                            <a href="error-429.html" class="tp-link">Error 429</a>
+                                            <a href="javascript:void(0);" class="tp-link">Error 429</a>
                                         </li>
                                         <li>
-                                            <a href="offline-page.html" class="tp-link">Offline Page</a>
+                                            <a href="javascript:void(0);" class="tp-link">Offline Page</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -123,38 +123,38 @@
                                 <div class="collapse" id="sidebarExpages">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="pages-starter.html" class="tp-link">Starter</a>
+                                            <a href="javascript:void(0);" class="tp-link">Starter</a>
                                         </li>
                                         <li>
-                                            <a href="pages-profile.html" class="tp-link">Profile</a>
+                                            <a href="{{ route('profile.edit') }}" class="tp-link">Profile</a>
                                         </li>
                                         <li>
-                                            <a href="pages-pricing.html" class="tp-link">Pricing</a>
+                                            <a href="javascript:void(0);" class="tp-link">Pricing</a>
                                         </li>
                                         <li>
-                                            <a href="pages-timeline.html" class="tp-link">Timeline</a>
+                                            <a href="javascript:void(0);" class="tp-link">Timeline</a>
                                         </li>
                                         <li>
-                                            <a href="pages-invoice.html" class="tp-link">Invoice</a>
+                                            <a href="javascript:void(0);" class="tp-link">Invoice</a>
                                         </li>
                                         <li>
-                                            <a href="pages-faqs.html" class="tp-link">FAQs</a>
+                                            <a href="javascript:void(0);" class="tp-link">FAQs</a>
                                         </li>
                                         <li>
-                                            <a href="pages-gallery.html" class="tp-link">Gallery</a>
+                                            <a href="javascript:void(0);" class="tp-link">Gallery</a>
                                         </li>
                                         <li>
-                                            <a href="pages-maintenance.html" class="tp-link">Maintenance</a>
+                                            <a href="javascript:void(0);" class="tp-link">Maintenance</a>
                                         </li>
                                         <li>
-                                            <a href="pages-coming-soon.html" class="tp-link">Coming Soon</a>
+                                            <a href="javascript:void(0);" class="tp-link">Coming Soon</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li>
-                                <a href="calendar.html" class="tp-link">
+                                <a href="javascript:void(0);" class="tp-link">
                                     <i data-feather="calendar"></i>
                                     <span> Calendar </span>
                                 </a>
@@ -171,77 +171,77 @@
                                 <div class="collapse" id="sidebarBaseui">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="ui-accordions.html" class="tp-link">Accordions</a>
+                                            <a href="javascript:void(0);" class="tp-link">Accordions</a>
                                         </li>
                                         <li>
-                                            <a href="ui-alerts.html" class="tp-link">Alerts</a>
+                                            <a href="javascript:void(0);" class="tp-link">Alerts</a>
                                         </li>
                                         <li>
-                                            <a href="ui-badges.html" class="tp-link">Badges</a>
+                                            <a href="javascript:void(0);" class="tp-link">Badges</a>
                                         </li>
                                         <li>
-                                            <a href="ui-breadcrumb.html" class="tp-link">Breadcrumb</a>
+                                            <a href="javascript:void(0);" class="tp-link">Breadcrumb</a>
                                         </li>
                                         <li>
-                                            <a href="ui-buttons.html" class="tp-link">Buttons</a>
+                                            <a href="javascript:void(0);" class="tp-link">Buttons</a>
                                         </li>
                                         <li>
-                                            <a href="ui-cards.html" class="tp-link">Cards</a>
+                                            <a href="javascript:void(0);" class="tp-link">Cards</a>
                                         </li>
                                         <li>
-                                            <a href="ui-collapse.html" class="tp-link">Collapse</a>
+                                            <a href="javascript:void(0);" class="tp-link">Collapse</a>
                                         </li>
                                         <li>
-                                            <a href="ui-dropdowns.html" class="tp-link">Dropdowns</a>
+                                            <a href="javascript:void(0);" class="tp-link">Dropdowns</a>
                                         </li>
                                         <li>
-                                            <a href="ui-video.html" class="tp-link">Embed Video</a>
+                                            <a href="javascript:void(0);" class="tp-link">Embed Video</a>
                                         </li>
                                         <li>
-                                            <a href="ui-grid.html" class="tp-link">Grid</a>
+                                            <a href="javascript:void(0);" class="tp-link">Grid</a>
                                         </li>
                                         <li>
-                                            <a href="ui-images.html" class="tp-link">Images</a>
+                                            <a href="javascript:void(0);" class="tp-link">Images</a>
                                         </li>
                                         <li>
-                                            <a href="ui-list.html" class="tp-link">List Group</a>
+                                            <a href="javascript:void(0);" class="tp-link">List Group</a>
                                         </li>
                                         <li>
-                                            <a href="ui-modals.html" class="tp-link">Modals</a>
+                                            <a href="javascript:void(0);" class="tp-link">Modals</a>
                                         </li>
                                         <li>
-                                            <a href="ui-placeholders.html" class="tp-link">Placeholders</a>
+                                            <a href="javascript:void(0);" class="tp-link">Placeholders</a>
                                         </li>
                                         <li>
-                                            <a href="ui-pagination.html" class="tp-link">Pagination</a>
+                                            <a href="javascript:void(0);" class="tp-link">Pagination</a>
                                         </li>
                                         <li>
-                                            <a href="ui-popovers.html" class="tp-link">Popovers</a>
+                                            <a href="javascript:void(0);" class="tp-link">Popovers</a>
                                         </li>
                                         <li>
-                                            <a href="ui-progress.html" class="tp-link">Progress</a>
+                                            <a href="javascript:void(0);" class="tp-link">Progress</a>
                                         </li>
                                         <li>
-                                            <a href="ui-scrollspy.html" class="tp-link">Scrollspy</a>
+                                            <a href="javascript:void(0);" class="tp-link">Scrollspy</a>
                                         </li>
                                         <li>
-                                            <a href="ui-spinners.html" class="tp-link">Spinners</a>
+                                            <a href="javascript:void(0);" class="tp-link">Spinners</a>
                                         </li>
                                         <li>
-                                            <a href="ui-tabs.html" class="tp-link">Tabs</a>
+                                            <a href="javascript:void(0);" class="tp-link">Tabs</a>
                                         </li>
                                         <li>
-                                            <a href="ui-tooltips.html" class="tp-link">Tooltips</a>
+                                            <a href="javascript:void(0);" class="tp-link">Tooltips</a>
                                         </li>
                                         <li>
-                                            <a href="ui-typography.html" class="tp-link">Typography</a>
+                                            <a href="javascript:void(0);" class="tp-link">Typography</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
                             <li>
-                                <a href="widgets.html" class="tp-link">
+                                <a href="javascript:void(0);" class="tp-link">
                                     <i data-feather="aperture"></i>
                                     <span> Widgets </span>
                                 </a>
@@ -256,16 +256,16 @@
                                 <div class="collapse" id="sidebarAdvancedUI">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="extended-carousel.html" class="tp-link">Carousel</a>
+                                            <a href="javascript:void(0);" class="tp-link">Carousel</a>
                                         </li>
                                         <li>
-                                            <a href="extended-notifications.html" class="tp-link">Notifications</a>
+                                            <a href="javascript:void(0);" class="tp-link">Notifications</a>
                                         </li>
                                         <li>
-                                            <a href="extended-offcanvas.html" class="tp-link">Offcanvas</a>
+                                            <a href="javascript:void(0);" class="tp-link">Offcanvas</a>
                                         </li>
                                         <li>
-                                            <a href="extended-range-slider.html" class="tp-link">Range Slider</a>
+                                            <a href="javascript:void(0);" class="tp-link">Range Slider</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -280,10 +280,10 @@
                                 <div class="collapse" id="sidebarIcons">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="icons-feather.html" class="tp-link">Feather Icons</a>
+                                            <a href="javascript:void(0);" class="tp-link">Feather Icons</a>
                                         </li>
                                         <li>
-                                            <a href="icons-mdi.html" class="tp-link">Material Design Icons</a>
+                                            <a href="javascript:void(0);" class="tp-link">Material Design Icons</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -298,16 +298,16 @@
                                 <div class="collapse" id="sidebarForms">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="forms-elements.html" class="tp-link">General Elements</a>
+                                            <a href="javascript:void(0);" class="tp-link">General Elements</a>
                                         </li>
                                         <li>
-                                            <a href="forms-validation.html" class="tp-link">Validation</a>
+                                            <a href="javascript:void(0);" class="tp-link">Validation</a>
                                         </li>
                                         <li>
-                                            <a href="forms-quilljs.html" class="tp-link">Quilljs Editor</a>
+                                            <a href="javascript:void(0);" class="tp-link">Quilljs Editor</a>
                                         </li>
                                         <li>
-                                            <a href="forms-pickers.html" class="tp-link">Picker</a>
+                                            <a href="javascript:void(0);" class="tp-link">Picker</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -322,10 +322,10 @@
                                 <div class="collapse" id="sidebarTables">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="tables-basic.html" class="tp-link">Basic Tables</a>
+                                            <a href="javascript:void(0);" class="tp-link">Basic Tables</a>
                                         </li>
                                         <li>
-                                            <a href="tables-datatables.html" class="tp-link">Data Tables</a>
+                                            <a href="javascript:void(0);" class="tp-link">Data Tables</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -340,58 +340,58 @@
                                 <div class="collapse" id="sidebarCharts">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href='charts-line.html'>Line</a>
+                                            <a href="javascript:void(0);">Line</a>
                                         </li>
                                         <li>
-                                            <a href='charts-area.html'>Area</a>
+                                            <a href="javascript:void(0);">Area</a>
                                         </li>
                                         <li>
-                                            <a href='charts-column.html'>Column</a>
+                                            <a href="javascript:void(0);">Column</a>
                                         </li>
                                         <li>
-                                            <a href='charts-bar.html'>Bar</a>
+                                            <a href="javascript:void(0);">Bar</a>
                                         </li>
                                         <li>
-                                            <a href='charts-mixed.html'>Mixed</a>
+                                            <a href="javascript:void(0);">Mixed</a>
                                         </li>
                                         <li>
-                                            <a href='charts-timeline.html'>Timeline</a>
+                                            <a href="javascript:void(0);">Timeline</a>
                                         </li>
                                         <li>
-                                            <a href='charts-rangearea.html'>Range Area</a>
+                                            <a href="javascript:void(0);">Range Area</a>
                                         </li>
                                         <li>
-                                            <a href='charts-funnel.html'>Funnel</a>
+                                            <a href="javascript:void(0);">Funnel</a>
                                         </li>
                                         <li>
-                                            <a href='charts-candlestick.html'>Candlestick</a>
+                                            <a href="javascript:void(0);">Candlestick</a>
                                         </li>
                                         <li>
-                                            <a href='charts-boxplot.html'>Boxplot</a>
+                                            <a href="javascript:void(0);">Boxplot</a>
                                         </li>
                                         <li>
-                                            <a href='charts-bubble.html'>Bubble</a>
+                                            <a href="javascript:void(0);">Bubble</a>
                                         </li>
                                         <li>
-                                            <a href='charts-scatter.html'>Scatter</a>
+                                            <a href="javascript:void(0);">Scatter</a>
                                         </li>
                                         <li>
-                                            <a href='charts-heatmap.html'>Heatmap</a>
+                                            <a href="javascript:void(0);">Heatmap</a>
                                         </li>
                                         <li>
-                                            <a href='charts-treemap.html'>Treemap</a>
+                                            <a href="javascript:void(0);">Treemap</a>
                                         </li>
                                         <li>
-                                            <a href='charts-pie.html'>Pie</a>
+                                            <a href="javascript:void(0);">Pie</a>
                                         </li>
                                         <li>
-                                            <a href='charts-radialbar.html'>Radialbar</a>
+                                            <a href="javascript:void(0);">Radialbar</a>
                                         </li>
                                         <li>
-                                            <a href='charts-radar.html'>Radar</a>
+                                            <a href="javascript:void(0);">Radar</a>
                                         </li>
                                         <li>
-                                            <a href='charts-polararea.html'>Polar</a>
+                                            <a href="javascript:void(0);">Polar</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -406,10 +406,10 @@
                                 <div class="collapse" id="sidebarMaps">
                                     <ul class="nav-second-level">
                                         <li>
-                                            <a href="maps-google.html" class="tp-link">Google Maps</a>
+                                            <a href="javascript:void(0);" class="tp-link">Google Maps</a>
                                         </li>
                                         <li>
-                                            <a href="maps-vector.html" class="tp-link">Vector Maps</a>
+                                            <a href="javascript:void(0);" class="tp-link">Vector Maps</a>
                                         </li>
                                     </ul>
                                 </div>

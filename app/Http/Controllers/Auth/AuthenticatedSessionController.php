@@ -28,7 +28,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        // Always land on the Laravel dashboard instead of stale theme URLs.
+        return redirect()->route('dashboard');
     }
 
     /**

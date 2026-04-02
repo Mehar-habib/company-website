@@ -305,8 +305,8 @@
 
                                                     <tr>
                                                         <td>
-                                                            /index.html
-                                                            <a href="#" class="ms-1" aria-label="Open website">
+                                                            /
+                                                            <a href="{{ url('/') }}" class="ms-1" aria-label="Open website">
                                                                 <i data-feather="link" class="ms-1 text-primary" style="height: 15px; width: 15px;"></i>
                                                             </a>
                                                         </td>
