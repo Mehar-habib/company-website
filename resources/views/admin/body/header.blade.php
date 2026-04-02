@@ -24,17 +24,17 @@
                             </li>
 
                             <li class="dropdown notification-list topbar-dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <button class="nav-link dropdown-toggle border-0 bg-transparent" id="notificationDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i data-feather="bell" class="noti-icon"></i>
                                     <span class="badge bg-danger rounded-circle noti-icon-badge">9</span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end dropdown-lg">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-lg" aria-labelledby="notificationDropdown">
 
                                     <!-- item-->
                                     <div class="dropdown-item noti-title">
                                         <h5 class="m-0">
                                             <span class="float-end">
-                                                <a href="" class="text-dark">
+                                                <a href="javascript:void(0);" class="text-dark">
                                                     <small>Clear All</small>
                                                 </a>
                                             </span>Notification
@@ -46,7 +46,7 @@
                                         <!-- item-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary active">
                                             <div class="notify-icon">
-                                                <img src="assets/images/users/user-12.jpg" class="img-fluid rounded-circle" alt="" />
+                                                <img src="{{ asset('backend/assets/images/users/user-12.jpg') }}" class="img-fluid rounded-circle" alt="" />
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <p class="notify-details">Carl Steadham</p>
@@ -60,7 +60,7 @@
                                         <!-- item-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
                                             <div class="notify-icon">
-                                                <img src="assets/images/users/user-2.jpg" class="img-fluid rounded-circle" alt="" />
+                                                <img src="{{ asset('backend/assets/images/users/user-2.jpg') }}" class="img-fluid rounded-circle" alt="" />
                                             </div>
                                             <div class="notify-content">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -85,7 +85,7 @@
                                         <!-- item-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
                                             <div class="notify-icon">
-                                                <img src="assets/images/users/user-3.jpg" class="img-fluid rounded-circle" alt="" />
+                                                <img src="{{ asset('backend/assets/images/users/user-3.jpg') }}" class="img-fluid rounded-circle" alt="" />
                                             </div>
                                             <div class="notify-content">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -99,7 +99,7 @@
                                         <!-- item-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
                                             <div class="notify-icon">
-                                                <img src="assets/images/users/user-8.jpg" class="img-fluid rounded-circle" alt="" />
+                                                <img src="{{ asset('backend/assets/images/users/user-8.jpg') }}" class="img-fluid rounded-circle" alt="" />
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <p class="notify-details">Violette Lasky</p>
@@ -113,7 +113,7 @@
                                         <!-- item-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
                                             <div class="notify-icon">
-                                                <img src="assets/images/users/user-5.jpg" class="img-fluid rounded-circle" alt="" />
+                                                <img src="{{ asset('backend/assets/images/users/user-5.jpg') }}" class="img-fluid rounded-circle" alt="" />
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <p class="notify-details">Ralph Edwards</p>
@@ -127,7 +127,7 @@
                                         <!-- item-->
                                         <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
                                             <div class="notify-icon">
-                                                <img src="assets/images/users/user-6.jpg" class="img-fluid rounded-circle" alt="" />
+                                                <img src="{{ asset('backend/assets/images/users/user-6.jpg') }}" class="img-fluid rounded-circle" alt="" />
                                             </div>
                                             <div class="notify-content">
                                                 <div class="d-flex align-items-center justify-content-between">
@@ -149,13 +149,13 @@
                             </li>
 
                             <li class="dropdown notification-list topbar-dropdown">
-                                <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="assets/images/users/user-11.jpg" alt="user-image" class="rounded-circle">
+                                <button class="nav-link dropdown-toggle nav-user me-0 border-0 bg-transparent" id="profileDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img  src="{{asset('backend/assets/images/users/user-11.jpg')}}" alt="user-image" class="rounded-circle">
                                     <span class="pro-user-name ms-1">
                                         Christian <i class="mdi mdi-chevron-down"></i>
                                     </span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-end profile-dropdown" aria-labelledby="profileDropdown">
                                     <!-- item-->
                                     <div class="dropdown-header noti-title">
                                         <h6 class="text-overflow m-0">Welcome !</h6>
@@ -176,7 +176,7 @@
                                     <div class="dropdown-divider"></div>
 
                                     <!-- item-->
-                                    <a href="auth-logout.html" class="dropdown-item notify-item">
+                                    <a href="{{ route('admin.logout') }}" class="dropdown-item notify-item">
                                         <i class="mdi mdi-location-exit fs-16 align-middle"></i>
                                         <span>Logout</span>
                                     </a>
