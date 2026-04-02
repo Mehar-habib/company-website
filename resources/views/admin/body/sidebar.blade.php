@@ -45,13 +45,6 @@
                                 </div>
                             </li>
 
-                            <!-- <li>
-                                <a href="landing.html" target="_blank">
-                                    <i data-feather="globe"></i>
-                                    <span> Landing </span>
-                                </a>
-                            </li> -->
-
                             <li class="menu-title">Pages</li>
 
                             <li>
@@ -67,21 +60,6 @@
                                         </li>
                                         <li>
                                             <a href="{{ route('register') }}" class="tp-link">Register</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('password.request') }}" class="tp-link">Recover Password</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Lock Screen</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Confirm Mail</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Email Verification</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('admin.logout') }}" class="tp-link">Logout</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -101,63 +79,9 @@
                                         <li>
                                             <a href="javascript:void(0);" class="tp-link">Error 500</a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Error 503</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Error 429</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Offline Page</a>
-                                        </li>
+
                                     </ul>
                                 </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarExpages" data-bs-toggle="collapse">
-                                    <i data-feather="file-text"></i>
-                                    <span> Utility </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarExpages">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Starter</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ route('profile.edit') }}" class="tp-link">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Timeline</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Invoice</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Gallery</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Maintenance</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Coming Soon</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="javascript:void(0);" class="tp-link">
-                                    <i data-feather="calendar"></i>
-                                    <span> Calendar </span>
-                                </a>
                             </li>
 
                             <li class="menu-title mt-2">General</li>
@@ -176,66 +100,7 @@
                                         <li>
                                             <a href="javascript:void(0);" class="tp-link">Alerts</a>
                                         </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Badges</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Breadcrumb</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Buttons</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Cards</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Collapse</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Dropdowns</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Embed Video</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Grid</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Images</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">List Group</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Modals</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Placeholders</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Pagination</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Popovers</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Progress</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Scrollspy</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Spinners</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Tabs</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Tooltips</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Typography</a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </li>
@@ -284,132 +149,6 @@
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);" class="tp-link">Material Design Icons</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarForms" data-bs-toggle="collapse">
-                                    <i data-feather="briefcase"></i>
-                                    <span> Forms </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarForms">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">General Elements</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Validation</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Quilljs Editor</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Picker</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarTables" data-bs-toggle="collapse">
-                                    <i data-feather="table"></i>
-                                    <span> Tables </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarTables">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Basic Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Data Tables</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarCharts" data-bs-toggle="collapse">
-                                    <i data-feather="pie-chart"></i>
-                                    <span> Apex Charts </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarCharts">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="javascript:void(0);">Line</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Area</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Column</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Bar</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Mixed</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Timeline</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Range Area</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Funnel</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Candlestick</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Boxplot</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Bubble</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Scatter</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Heatmap</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Treemap</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Pie</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Radialbar</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Radar</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Polar</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarMaps" data-bs-toggle="collapse">
-                                    <i data-feather="map"></i>
-                                    <span> Maps </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarMaps">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Google Maps</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);" class="tp-link">Vector Maps</a>
                                         </li>
                                     </ul>
                                 </div>
