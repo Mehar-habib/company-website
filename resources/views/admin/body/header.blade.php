@@ -67,12 +67,16 @@
 
                                 </div>
                             </li>
+                              @php
+                                        $id = Auth::user()->id;
+                                        $profileData = App\Models\User::find($id);
+                                    @endphp
 
                             <li class="dropdown notification-list topbar-dropdown">
                                 <button class="nav-link dropdown-toggle nav-user me-0 border-0 bg-transparent" id="profileDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img  src="{{asset('backend/assets/images/users/user-11.jpg')}}" alt="user-image" class="rounded-circle">
+                                    <img  src="{{(!empty($profileData->photo)) ? url('upload/user_images/'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" alt="user-image" class="rounded-circle">
                                     <span class="pro-user-name ms-1">
-                                        Christian <i class="mdi mdi-chevron-down"></i>
+                                        {{$profileData->name}} <i class="mdi mdi-chevron-down"></i>
                                     </span>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end profile-dropdown" aria-labelledby="profileDropdown">
@@ -94,7 +98,6 @@
                                     </a>
 
                                     <div class="dropdown-divider"></div>
-
                                     <!-- item-->
                                     <a href="{{ route('admin.logout') }}" class="dropdown-item notify-item">
                                         <i class="mdi mdi-location-exit fs-16 align-middle"></i>
