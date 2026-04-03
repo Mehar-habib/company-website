@@ -1,5 +1,6 @@
 @extends('admin.admin_master');
 @section('admin')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
      <div class="content">
 
                     <!-- Start Content-->
@@ -80,14 +81,14 @@
                                                                         <div class="form-group mb-3 row">
                                                                             <lab class="form-label">Photo</lab el>
                                                                             <div class="col-lg-12 col-xl-12">
-                                                                                <input class="form-control" type="file" name="photo">
+                                                                                <input class="form-control" type="file" id="image" name="photo">
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="form-group mb-3 row">
                                                                             <label class="form-label"></label>
                                                                             <div class="col-lg-12 col-xl-12">
-                                                                               <img src="{{(!empty($profileData->photo)) ? url('upload/user_images'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" class="rounded-circle avatar-xxl img-thumbnail float-start" alt="image profile">
+                                                                               <img src="{{(!empty($profileData->photo)) ? url('upload/user_images'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" id="showImage" class="rounded-circle avatar-xxl img-thumbnail float-start" alt="image profile">
                                                                             </div>
                                                                         </div>
 
@@ -150,5 +151,17 @@
 
                     </div>
         </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#image').change(function(e){
+                    var reader = new FileReader()
+                    reader.onload = function(e){
+                        $('#showImage').attr('src', e.target.result)
+                    }
+                    reader.readAsDataURL(e.target.files['0'])
+                })
+            })
+        </script>
 
 @endsection
