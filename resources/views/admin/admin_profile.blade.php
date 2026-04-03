@@ -1,6 +1,19 @@
-@extends('admin.admin_master');
+@extends('admin.admin_master')
 @section('admin')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    .admin-profile-avatar {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    @media (min-width: 992px) {
+        .admin-profile-avatar {
+            width: 140px;
+            height: 140px;
+        }
+    }
+</style>
      <div class="content">
 
                     <!-- Start Content-->
@@ -20,17 +33,17 @@
 
                                     <div class="card-body">
 
-                                        <div class="align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                <img src="{{(!empty($profileData->photo)) ? url('upload/user_images'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" class="rounded-circle avatar-xxl img-thumbnail float-start" alt="image profile">
+	                                        <div class="align-items-center">
+	                                            <div class="d-flex align-items-center">
+	                                                <img src="{{(!empty($profileData->photo)) ? url('upload/user_images/'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" class="rounded-circle img-thumbnail admin-profile-avatar" alt="image profile">
 
-                                                <div class="overflow-hidden ms-4">
-                                                    <h4 class="m-0 text-dark fs-20">{{$profileData->name}}</h4>
-                                                    <p class="my-1 text-muted fs-16">{{$profileData->email}}</p>
-                                                    <span class="fs-15"><i class="mdi mdi-message me-2 align-middle"></i>Speaks: <span>Urdu <span class="badge bg-primary-subtle text-primary px-2 py-1 fs-13 fw-normal">native</span> , English, Turkish </span></span>
-                                                </div>
-                                            </div>
-                                        </div>
+	                                                <div class="overflow-hidden ms-4">
+	                                                    <h4 class="m-0 text-dark fs-20">{{$profileData->name}}</h4>
+	                                                    <p class="my-1 text-muted fs-16">{{$profileData->email}}</p>
+	                                                    <span class="fs-15"><i class="mdi mdi-message me-2 align-middle"></i>Speaks: <span>Urdu <span class="badge bg-primary-subtle text-primary px-2 py-1 fs-13 fw-normal">native</span> , English, Turkish </span></span>
+	                                                </div>
+	                                            </div>
+	                                        </div>
 
 
 
@@ -48,7 +61,8 @@
                                                                         </div><!--end col-->
                                                                     </div>
                                                                 </div>
-                                                                <form action="">
+	                                                                <form action="{{route('profile.store')}}" method="post" enctype="multipart/form-data" >
+	                                                                    @csrf
 
                                                                     <div class="card-body">
                                                                         <div class="form-group mb-3 row">
@@ -76,21 +90,21 @@
                                                                             <div class="col-lg-12 col-xl-12">
                                                                                 <input class="form-control" type="text" name="address" value="{{$profileData->address}}">
                                                                             </div>
-                                                                        </div>
+	                                                                        </div>
 
-                                                                        <div class="form-group mb-3 row">
-                                                                            <lab class="form-label">Photo</lab el>
-                                                                            <div class="col-lg-12 col-xl-12">
-                                                                                <input class="form-control" type="file" id="image" name="photo">
-                                                                            </div>
-                                                                        </div>
+	                                                                        <div class="form-group mb-3 row">
+	                                                                            <label class="form-label">Photo</label>
+	                                                                            <div class="col-lg-12 col-xl-12">
+	                                                                                <input class="form-control" type="file" id="image" name="photo">
+	                                                                            </div>
+	                                                                        </div>
 
-                                                                        <div class="form-group mb-3 row">
-                                                                            <label class="form-label"></label>
-                                                                            <div class="col-lg-12 col-xl-12">
-                                                                               <img src="{{(!empty($profileData->photo)) ? url('upload/user_images'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" id="showImage" class="rounded-circle avatar-xxl img-thumbnail float-start" alt="image profile">
-                                                                            </div>
-                                                                        </div>
+	                                                                        <div class="form-group mb-3 row">
+	                                                                            <label class="form-label"></label>
+	                                                                            <div class="col-lg-12 col-xl-12">
+	                                                                               <img src="{{(!empty($profileData->photo)) ? url('upload/user_images/'.$profileData->photo) : url('https://t4.ftcdn.net/jpg/06/28/36/93/360_F_628369390_99h2NtiLNzHwvQXYlg7JTAX21ID8CSdV.jpg')}}" id="showImage" class="rounded-circle img-thumbnail admin-profile-avatar d-block" alt="image profile">
+	                                                                            </div>
+	                                                                        </div>
 
                                                                         <button type="submit" class="btn btn-primary">Save Changes</button>
                                                                     </div><!--end card-body-->
