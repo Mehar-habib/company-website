@@ -36,6 +36,21 @@
                                     </div>
 
                                     <div class="pt-0">
+                                        @if (session('status'))
+                                            <div class="alert alert-success">
+                                                {{session('status')}}
+                                            </div>
+                                        @endif
+                                        @if ($errors->any())
+                                        <div class="alert alert-danger mt-3">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{$error}}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+
+                                        @endif
                                         <form method="POST"  action="{{route('custom.verification.verify')}}" class="my-4">
                                             @csrf
                                             @if (session("error"))
